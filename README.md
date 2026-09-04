@@ -6,6 +6,8 @@
 - Guardrails & validation
 - [Done]
 
+## Comming Phases
+
 ## Phase 2: Observability 📋
 - Cost tracking
 - Advanced metrics
