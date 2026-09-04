@@ -26,9 +26,6 @@
 - Protocol support
 - Tool marketplace
 
-
-## 🎓 Educational Value
-
 ## Quick Start Guide
 # Clone repo
 git clone https://github.com/challaravinath/travel-agent.git
@@ -101,7 +98,7 @@ src/
 tests/
 └── unit/              # 86+ unit tests
 
-
+## 🎓 Educational Value
 **Architecture**
 User Input
     ↓
