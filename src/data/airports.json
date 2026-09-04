@@ -1,0 +1,654 @@
+{
+  "airports": [
+    {
+      "code": "CDG",
+      "city": "paris",
+      "name": "Charles de Gaulle",
+      "country": "France",
+      "latitude": 48.8566,
+      "longitude": 2.3522
+    },
+    {
+      "code": "LHR",
+      "city": "london",
+      "name": "London Heathrow",
+      "country": "United Kingdom",
+      "latitude": 51.5074,
+      "longitude": -0.1278
+    },
+    {
+      "code": "ORY",
+      "city": "paris",
+      "name": "Paris Orly",
+      "country": "France",
+      "latitude": 48.7233,
+      "longitude": 2.3792
+    },
+    {
+      "code": "LGW",
+      "city": "london",
+      "name": "London Gatwick",
+      "country": "United Kingdom",
+      "latitude": 51.1537,
+      "longitude": -0.1821
+    },
+    {
+      "code": "BER",
+      "city": "berlin",
+      "name": "Berlin Brandenburg",
+      "country": "Germany",
+      "latitude": 52.3667,
+      "longitude": 13.5033
+    },
+    {
+      "code": "FRA",
+      "city": "frankfurt",
+      "name": "Frankfurt am Main",
+      "country": "Germany",
+      "latitude": 50.0379,
+      "longitude": 8.5622
+    },
+    {
+      "code": "MUC",
+      "city": "munich",
+      "name": "Munich Airport",
+      "country": "Germany",
+      "latitude": 48.3538,
+      "longitude": 11.7861
+    },
+    {
+      "code": "AMS",
+      "city": "amsterdam",
+      "name": "Amsterdam Airport Schiphol",
+      "country": "Netherlands",
+      "latitude": 52.3086,
+      "longitude": 4.7639
+    },
+    {
+      "code": "FCO",
+      "city": "rome",
+      "name": "Rome Fiumicino",
+      "country": "Italy",
+      "latitude": 41.8002,
+      "longitude": 12.2388
+    },
+    {
+      "code": "MAD",
+      "city": "madrid",
+      "name": "Adolfo Suárez Madrid-Barajas",
+      "country": "Spain",
+      "latitude": 40.4719,
+      "longitude": -3.6289
+    },
+    {
+      "code": "BCN",
+      "city": "barcelona",
+      "name": "Barcelona-El Prat",
+      "country": "Spain",
+      "latitude": 41.2974,
+      "longitude": 2.0833
+    },
+    {
+      "code": "VCE",
+      "city": "venice",
+      "name": "Venice Marco Polo",
+      "country": "Italy",
+      "latitude": 45.5051,
+      "longitude": 12.2652
+    },
+    {
+      "code": "JFK",
+      "city": "new york",
+      "name": "John F. Kennedy International",
+      "country": "United States",
+      "latitude": 40.6413,
+      "longitude": -73.7781
+    },
+    {
+      "code": "LGA",
+      "city": "new york",
+      "name": "LaGuardia Airport",
+      "country": "United States",
+      "latitude": 40.7769,
+      "longitude": -73.8740
+    },
+    {
+      "code": "LAX",
+      "city": "los angeles",
+      "name": "Los Angeles International",
+      "country": "United States",
+      "latitude": 33.9425,
+      "longitude": -118.4081
+    },
+    {
+      "code": "SFO",
+      "city": "san francisco",
+      "name": "San Francisco International",
+      "country": "United States",
+      "latitude": 37.6213,
+      "longitude": -122.3790
+    },
+    {
+      "code": "ORD",
+      "city": "chicago",
+      "name": "Chicago O'Hare International",
+      "country": "United States",
+      "latitude": 41.9742,
+      "longitude": -87.9073
+    },
+    {
+      "code": "MIA",
+      "city": "miami",
+      "name": "Miami International",
+      "country": "United States",
+      "latitude": 25.7907,
+      "longitude": -80.2700
+    },
+    {
+      "code": "ATL",
+      "city": "atlanta",
+      "name": "Hartsfield-Jackson Atlanta",
+      "country": "United States",
+      "latitude": 33.6407,
+      "longitude": -84.4277
+    },
+    {
+      "code": "NRT",
+      "city": "tokyo",
+      "name": "Narita International",
+      "country": "Japan",
+      "latitude": 35.7654,
+      "longitude": 140.3931
+    },
+    {
+      "code": "HND",
+      "city": "tokyo",
+      "name": "Tokyo Haneda",
+      "country": "Japan",
+      "latitude": 35.5494,
+      "longitude": 139.7798
+    },
+    {
+      "code": "KIX",
+      "city": "osaka",
+      "name": "Kansai International",
+      "country": "Japan",
+      "latitude": 34.4347,
+      "longitude": 135.2438
+    },
+    {
+      "code": "NGB",
+      "city": "nagoya",
+      "name": "Nagoya International",
+      "country": "Japan",
+      "latitude": 35.2506,
+      "longitude": 136.8104
+    },
+    {
+      "code": "SIN",
+      "city": "singapore",
+      "name": "Singapore Changi",
+      "country": "Singapore",
+      "latitude": 1.3521,
+      "longitude": 103.8198
+    },
+    {
+      "code": "HKG",
+      "city": "hong kong",
+      "name": "Hong Kong International",
+      "country": "Hong Kong",
+      "latitude": 22.3080,
+      "longitude": 113.9185
+    },
+    {
+      "code": "PVG",
+      "city": "shanghai",
+      "name": "Shanghai Pudong",
+      "country": "China",
+      "latitude": 31.1434,
+      "longitude": 121.8047
+    },
+    {
+      "code": "BKK",
+      "city": "bangkok",
+      "name": "Suvarnabhumi",
+      "country": "Thailand",
+      "latitude": 13.6900,
+      "longitude": 100.7501
+    },
+    {
+      "code": "ICN",
+      "city": "seoul",
+      "name": "Incheon International",
+      "country": "South Korea",
+      "latitude": 37.4602,
+      "longitude": 126.4407
+    },
+    {
+      "code": "SYD",
+      "city": "sydney",
+      "name": "Sydney Kingsford Smith",
+      "country": "Australia",
+      "latitude": -33.9461,
+      "longitude": 151.1772
+    },
+    {
+      "code": "MEL",
+      "city": "melbourne",
+      "name": "Melbourne Airport",
+      "country": "Australia",
+      "latitude": -37.6733,
+      "longitude": 144.8433
+    },
+    {
+      "code": "BOM",
+      "city": "mumbai",
+      "name": "Bombay Indira Gandhi",
+      "country": "India",
+      "latitude": 19.0896,
+      "longitude": 72.8656
+    },
+    {
+      "code": "DEL",
+      "city": "delhi",
+      "name": "Indira Gandhi International",
+      "country": "India",
+      "latitude": 28.5563,
+      "longitude": 77.1003
+    },
+    {
+      "code": "HYD",
+      "city": "hyderabad",
+      "name": "Rajiv Gandhi International",
+      "country": "India",
+      "latitude": 17.3731,
+      "longitude": 78.4690
+    },
+    {
+      "code": "BLR",
+      "city": "bangalore",
+      "name": "Kempegowda International",
+      "country": "India",
+      "latitude": 13.1979,
+      "longitude": 77.7068
+    },
+    {
+      "code": "COK",
+      "city": "kochi",
+      "name": "Kochi International",
+      "country": "India",
+      "latitude": 10.1924,
+      "longitude": 76.2597
+    },
+    {
+      "code": "DXB",
+      "city": "dubai",
+      "name": "Dubai International",
+      "country": "United Arab Emirates",
+      "latitude": 25.2528,
+      "longitude": 55.3644
+    },
+    {
+      "code": "AUH",
+      "city": "abu dhabi",
+      "name": "Abu Dhabi International",
+      "country": "United Arab Emirates",
+      "latitude": 24.4539,
+      "longitude": 54.3773
+    },
+    {
+      "code": "LHE",
+      "city": "lahore",
+      "name": "Allama Iqbal International",
+      "country": "Pakistan",
+      "latitude": 31.5204,
+      "longitude": 74.3587
+    },
+    {
+      "code": "IST",
+      "city": "istanbul",
+      "name": "Istanbul Atatürk",
+      "country": "Turkey",
+      "latitude": 40.9774,
+      "longitude": 28.8111
+    },
+    {
+      "code": "CAI",
+      "city": "cairo",
+      "name": "Cairo International",
+      "country": "Egypt",
+      "latitude": 30.1219,
+      "longitude": 31.4055
+    },
+    {
+      "code": "JNB",
+      "city": "johannesburg",
+      "name": "OR Tambo International",
+      "country": "South Africa",
+      "latitude": -26.1393,
+      "longitude": 28.2260
+    },
+    {
+      "code": "MEX",
+      "city": "mexico city",
+      "name": "Benito Juárez International",
+      "country": "Mexico",
+      "latitude": 19.4326,
+      "longitude": -99.0720
+    },
+    {
+      "code": "GRU",
+      "city": "sao paulo",
+      "name": "São Paulo/Guarulhos",
+      "country": "Brazil",
+      "latitude": -23.4356,
+      "longitude": -46.4731
+    },
+    {
+      "code": "EZE",
+      "city": "buenos aires",
+      "name": "Ministro Pistarini",
+      "country": "Argentina",
+      "latitude": -34.8222,
+      "longitude": -58.5358
+    },
+    {
+      "code": "YYZ",
+      "city": "toronto",
+      "name": "Toronto Pearson",
+      "country": "Canada",
+      "latitude": 43.6772,
+      "longitude": -79.6306
+    },
+    {
+      "code": "YVR",
+      "city": "vancouver",
+      "name": "Vancouver International",
+      "country": "Canada",
+      "latitude": 49.1900,
+      "longitude": -123.1724
+    },
+    {
+      "code": "AKL",
+      "city": "auckland",
+      "name": "Auckland International",
+      "country": "New Zealand",
+      "latitude": -37.0082,
+      "longitude": 174.7917
+    },
+    {
+      "code": "WLG",
+      "city": "wellington",
+      "name": "Wellington International",
+      "country": "New Zealand",
+      "latitude": -41.3271,
+      "longitude": 174.8860
+    },
+    {
+      "code": "BJS",
+      "city": "beijing",
+      "name": "Beijing Capital International",
+      "country": "China",
+      "latitude": 40.0799,
+      "longitude": 116.5850
+    },
+    {
+      "code": "CTU",
+      "city": "chengdu",
+      "name": "Chengdu Shuangliu",
+      "country": "China",
+      "latitude": 30.5728,
+      "longitude": 103.9468
+    },
+    {
+      "code": "CAN",
+      "city": "guangzhou",
+      "name": "Guangzhou Baiyun",
+      "country": "China",
+      "latitude": 23.3924,
+      "longitude": 113.3055
+    }
+  ],
+  "routes": [
+    {
+      "origin": "JFK",
+      "destination": "CDG",
+      "distance": 5837
+    },
+    {
+      "origin": "JFK",
+      "destination": "LHR",
+      "distance": 5585
+    },
+    {
+      "origin": "JFK",
+      "destination": "NRT",
+      "distance": 10844
+    },
+    {
+      "origin": "LAX",
+      "destination": "CDG",
+      "distance": 9106
+    },
+    {
+      "origin": "LAX",
+      "destination": "NRT",
+      "distance": 8800
+    },
+    {
+      "origin": "LAX",
+      "destination": "SYD",
+      "distance": 12050
+    },
+    {
+      "origin": "CDG",
+      "destination": "NRT",
+      "distance": 9730
+    },
+    {
+      "origin": "CDG",
+      "destination": "SYD",
+      "distance": 17000
+    },
+    {
+      "origin": "NRT",
+      "destination": "SYD",
+      "distance": 7820
+    },
+    {
+      "origin": "LHR",
+      "destination": "SYD",
+      "distance": 17000
+    },
+    {
+      "origin": "JFK",
+      "destination": "LGW",
+      "distance": 5570
+    },
+    {
+      "origin": "CDG",
+      "destination": "AMS",
+      "distance": 430
+    },
+    {
+      "origin": "CDG",
+      "destination": "FRA",
+      "distance": 610
+    },
+    {
+      "origin": "LHR",
+      "destination": "AMS",
+      "distance": 360
+    },
+    {
+      "origin": "ORD",
+      "destination": "LHR",
+      "distance": 6920
+    },
+    {
+      "origin": "LAX",
+      "destination": "HND",
+      "distance": 8765
+    },
+    {
+      "origin": "SFO",
+      "destination": "NRT",
+      "distance": 8280
+    },
+    {
+      "origin": "JFK",
+      "destination": "HND",
+      "distance": 10835
+    },
+    {
+      "origin": "NRT",
+      "destination": "HKG",
+      "distance": 2400
+    },
+    {
+      "origin": "HND",
+      "destination": "SIN",
+      "distance": 6300
+    },
+    {
+      "origin": "SIN",
+      "destination": "SYD",
+      "distance": 6300
+    },
+    {
+      "origin": "BKK",
+      "destination": "SIN",
+      "distance": 680
+    },
+    {
+      "origin": "HKG",
+      "destination": "SIN",
+      "distance": 2600
+    },
+    {
+      "origin": "CDG",
+      "destination": "DXB",
+      "distance": 5230
+    },
+    {
+      "origin": "LHR",
+      "destination": "DXB",
+      "distance": 5550
+    },
+    {
+      "origin": "DEL",
+      "destination": "DXB",
+      "distance": 2090
+    },
+    {
+      "origin": "BOM",
+      "destination": "DXB",
+      "distance": 1360
+    },
+    {
+      "origin": "DEL",
+      "destination": "BOM",
+      "distance": 1450
+    },
+    {
+      "origin": "DEL",
+      "destination": "BLR",
+      "distance": 2150
+    },
+    {
+      "origin": "BOM",
+      "destination": "COK",
+      "distance": 1350
+    },
+    {
+      "origin": "JFK",
+      "destination": "MEX",
+      "distance": 2250
+    },
+    {
+      "origin": "LAX",
+      "destination": "MEX",
+      "distance": 1760
+    },
+    {
+      "origin": "LAX",
+      "destination": "GRU",
+      "distance": 9450
+    },
+    {
+      "origin": "JFK",
+      "destination": "GRU",
+      "distance": 9040
+    },
+    {
+      "origin": "CDG",
+      "destination": "IST",
+      "distance": 2270
+    },
+    {
+      "origin": "LHR",
+      "destination": "IST",
+      "distance": 2560
+    },
+    {
+      "origin": "CDG",
+      "destination": "CAI",
+      "distance": 3230
+    },
+    {
+      "origin": "LHR",
+      "destination": "CAI",
+      "distance": 3570
+    },
+    {
+      "origin": "JFK",
+      "destination": "JNB",
+      "distance": 12750
+    },
+    {
+      "origin": "LHR",
+      "destination": "JNB",
+      "distance": 12300
+    },
+    {
+      "origin": "CDG",
+      "destination": "BCN",
+      "distance": 850
+    },
+    {
+      "origin": "CDG",
+      "destination": "MAD",
+      "distance": 1050
+    },
+    {
+      "origin": "CDG",
+      "destination": "FCO",
+      "distance": 1400
+    },
+    {
+      "origin": "YYZ",
+      "destination": "LHR",
+      "distance": 5170
+    },
+    {
+      "origin": "YYZ",
+      "destination": "CDG",
+      "distance": 5330
+    },
+    {
+      "origin": "AKL",
+      "destination": "SYD",
+      "distance": 2150
+    },
+    {
+      "origin": "PVG",
+      "destination": "NRT",
+      "distance": 1800
+    },
+    {
+      "origin": "BJS",
+      "destination": "NRT",
+      "distance": 2100
+    }
+  ]
+}

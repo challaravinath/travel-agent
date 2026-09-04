@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agent - Tool Calling System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- TOP BAR -->
+  <div class="header">
+    <div class="header-content">
+      <h1>Travel Agent</h1>
+      <p>Tool Calling with Observability</p>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="workspace">
+    
+    <!-- LEFT: TOOLS & FORMS -->
+    <div class="left-panel">
+      
+      <div class="tools-section">
+        <h3>Tools</h3>
+        <button class="tool-button active" data-tool="weather">🌤️ Weather</button>
+        <button class="tool-button" data-tool="flights">✈️ Flights</button>
+        <button class="tool-button" data-tool="attractions">🏛️ Attractions</button>
+        <button class="tool-button" data-tool="costs">💰 Costs</button>
+        <button class="tool-button" data-tool="safety">🛡️ Safety</button>
+      </div>
+
+      <div class="forms-section">
+        <h3>Search</h3>
+
+        <form id="weather-form" class="search-form show">
+          <input type="text" placeholder="City name" required>
+          <button type="submit">Search</button>
+        </form>
+
+        <form id="flights-form" class="search-form">
+          <input type="text" placeholder="From code (e.g., JFK)" required>
+          <input type="text" placeholder="To code (e.g., CDG)" required>
+          <input type="date" required>
+          <button type="submit">Search</button>
+        </form>
+
+        <form id="attractions-form" class="search-form">
+          <input type="text" placeholder="City name" required>
+          <button type="submit">Search</button>
+        </form>
+
+        <form id="costs-form" class="search-form">
+          <input type="text" placeholder="City name" required>
+          <button type="submit">Search</button>
+        </form>
+
+        <form id="safety-form" class="search-form">
+          <input type="text" placeholder="City name" required>
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- MIDDLE: RESULTS -->
+    <div class="middle-panel">
+      <h3>Results</h3>
+      <div id="results" class="results-box">
+        <div class="no-data">Select a tool and search</div>
+      </div>
+    </div>
+
+    <!-- RIGHT: METRICS & LOGS -->
+    <div class="right-panel">
+      
+      <div class="metrics-box">
+        <h3>Performance</h3>
+        <div class="metric-row">
+          <span>API Calls</span>
+          <strong id="api-calls">0</strong>
+        </div>
+        <div class="metric-row">
+          <span>Total Time</span>
+          <strong id="total-time">0ms</strong>
+        </div>
+        <div class="metric-row">
+          <span>Avg Time</span>
+          <strong id="avg-time">0ms</strong>
+        </div>
+      </div>
+
+      <div class="logs-box">
+        <h3>Activity</h3>
+        <div id="logs" class="logs-output">
+          <div class="log-line info">Ready</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

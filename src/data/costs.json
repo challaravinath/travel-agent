@@ -1,0 +1,409 @@
+{
+  "costs": {
+    "paris": {
+      "city": "Paris",
+      "country": "France",
+      "meal": 15,
+      "transport": 2.5,
+      "accommodation": 120,
+      "coffeePrice": 2.5,
+      "mealBudgetPerDay": 50
+    },
+    "london": {
+      "city": "London",
+      "country": "United Kingdom",
+      "meal": 18,
+      "transport": 3.5,
+      "accommodation": 140,
+      "coffeePrice": 3.2,
+      "mealBudgetPerDay": 60
+    },
+    "berlin": {
+      "city": "Berlin",
+      "country": "Germany",
+      "meal": 12,
+      "transport": 2.8,
+      "accommodation": 90,
+      "coffeePrice": 2.2,
+      "mealBudgetPerDay": 45
+    },
+    "amsterdam": {
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "meal": 14,
+      "transport": 3,
+      "accommodation": 110,
+      "coffeePrice": 2.8,
+      "mealBudgetPerDay": 50
+    },
+    "rome": {
+      "city": "Rome",
+      "country": "Italy",
+      "meal": 13,
+      "transport": 1.5,
+      "accommodation": 95,
+      "coffeePrice": 1.8,
+      "mealBudgetPerDay": 48
+    },
+    "madrid": {
+      "city": "Madrid",
+      "country": "Spain",
+      "meal": 12,
+      "transport": 2.2,
+      "accommodation": 85,
+      "coffeePrice": 1.9,
+      "mealBudgetPerDay": 45
+    },
+    "barcelona": {
+      "city": "Barcelona",
+      "country": "Spain",
+      "meal": 13,
+      "transport": 2.4,
+      "accommodation": 100,
+      "coffeePrice": 2.1,
+      "mealBudgetPerDay": 48
+    },
+    "tokyo": {
+      "city": "Tokyo",
+      "country": "Japan",
+      "meal": 12,
+      "transport": 2,
+      "accommodation": 100,
+      "coffeePrice": 3,
+      "mealBudgetPerDay": 45
+    },
+    "osaka": {
+      "city": "Osaka",
+      "country": "Japan",
+      "meal": 10,
+      "transport": 1.8,
+      "accommodation": 80,
+      "coffeePrice": 2.8,
+      "mealBudgetPerDay": 40
+    },
+    "new york": {
+      "city": "New York",
+      "country": "United States",
+      "meal": 20,
+      "transport": 2.9,
+      "accommodation": 150,
+      "coffeePrice": 3.5,
+      "mealBudgetPerDay": 70
+    },
+    "los angeles": {
+      "city": "Los Angeles",
+      "country": "United States",
+      "meal": 18,
+      "transport": 2.5,
+      "accommodation": 130,
+      "coffeePrice": 3.2,
+      "mealBudgetPerDay": 65
+    },
+    "chicago": {
+      "city": "Chicago",
+      "country": "United States",
+      "meal": 16,
+      "transport": 2.5,
+      "accommodation": 110,
+      "coffeePrice": 2.8,
+      "mealBudgetPerDay": 55
+    },
+    "san francisco": {
+      "city": "San Francisco",
+      "country": "United States",
+      "meal": 22,
+      "transport": 2.8,
+      "accommodation": 160,
+      "coffeePrice": 3.8,
+      "mealBudgetPerDay": 75
+    },
+    "miami": {
+      "city": "Miami",
+      "country": "United States",
+      "meal": 17,
+      "transport": 2.5,
+      "accommodation": 120,
+      "coffeePrice": 3.2,
+      "mealBudgetPerDay": 60
+    },
+    "toronto": {
+      "city": "Toronto",
+      "country": "Canada",
+      "meal": 15,
+      "transport": 3.2,
+      "accommodation": 110,
+      "coffeePrice": 2.8,
+      "mealBudgetPerDay": 52
+    },
+    "sydney": {
+      "city": "Sydney",
+      "country": "Australia",
+      "meal": 18,
+      "transport": 2.8,
+      "accommodation": 130,
+      "coffeePrice": 3.8,
+      "mealBudgetPerDay": 65
+    },
+    "melbourne": {
+      "city": "Melbourne",
+      "country": "Australia",
+      "meal": 16,
+      "transport": 2.6,
+      "accommodation": 120,
+      "coffeePrice": 3.5,
+      "mealBudgetPerDay": 60
+    },
+    "dubai": {
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "meal": 16,
+      "transport": 1.5,
+      "accommodation": 110,
+      "coffeePrice": 3.5,
+      "mealBudgetPerDay": 55
+    },
+    "singapore": {
+      "city": "Singapore",
+      "country": "Singapore",
+      "meal": 14,
+      "transport": 1.2,
+      "accommodation": 90,
+      "coffeePrice": 2.5,
+      "mealBudgetPerDay": 45
+    },
+    "hong kong": {
+      "city": "Hong Kong",
+      "country": "Hong Kong",
+      "meal": 13,
+      "transport": 1.8,
+      "accommodation": 100,
+      "coffeePrice": 2.8,
+      "mealBudgetPerDay": 48
+    },
+    "bangkok": {
+      "city": "Bangkok",
+      "country": "Thailand",
+      "meal": 8,
+      "transport": 0.8,
+      "accommodation": 50,
+      "coffeePrice": 1.5,
+      "mealBudgetPerDay": 30
+    },
+    "seoul": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "meal": 9,
+      "transport": 1.2,
+      "accommodation": 70,
+      "coffeePrice": 2.2,
+      "mealBudgetPerDay": 35
+    },
+    "mumbai": {
+      "city": "Mumbai",
+      "country": "India",
+      "meal": 5,
+      "transport": 0.5,
+      "accommodation": 35,
+      "coffeePrice": 1,
+      "mealBudgetPerDay": 15
+    },
+    "delhi": {
+      "city": "Delhi",
+      "country": "India",
+      "meal": 4,
+      "transport": 0.4,
+      "accommodation": 30,
+      "coffeePrice": 0.8,
+      "mealBudgetPerDay": 12
+    },
+    "hyderabad": {
+      "city": "Hyderabad",
+      "country": "India",
+      "meal": 4,
+      "transport": 0.4,
+      "accommodation": 28,
+      "coffeePrice": 0.8,
+      "mealBudgetPerDay": 12
+    },
+    "bangalore": {
+      "city": "Bangalore",
+      "country": "India",
+      "meal": 5,
+      "transport": 0.5,
+      "accommodation": 32,
+      "coffeePrice": 1,
+      "mealBudgetPerDay": 14
+    },
+    "shanghai": {
+      "city": "Shanghai",
+      "country": "China",
+      "meal": 8,
+      "transport": 0.6,
+      "accommodation": 60,
+      "coffeePrice": 2,
+      "mealBudgetPerDay": 28
+    },
+    "beijing": {
+      "city": "Beijing",
+      "country": "China",
+      "meal": 7,
+      "transport": 0.5,
+      "accommodation": 55,
+      "coffeePrice": 1.8,
+      "mealBudgetPerDay": 26
+    },
+    "istanbul": {
+      "city": "Istanbul",
+      "country": "Turkey",
+      "meal": 8,
+      "transport": 0.8,
+      "accommodation": 50,
+      "coffeePrice": 1.5,
+      "mealBudgetPerDay": 28
+    },
+    "cairo": {
+      "city": "Cairo",
+      "country": "Egypt",
+      "meal": 4,
+      "transport": 0.3,
+      "accommodation": 25,
+      "coffeePrice": 0.8,
+      "mealBudgetPerDay": 12
+    },
+    "johannesburg": {
+      "city": "Johannesburg",
+      "country": "South Africa",
+      "meal": 9,
+      "transport": 1.2,
+      "accommodation": 65,
+      "coffeePrice": 1.8,
+      "mealBudgetPerDay": 32
+    },
+    "mexico city": {
+      "city": "Mexico City",
+      "country": "Mexico",
+      "meal": 8,
+      "transport": 0.6,
+      "accommodation": 55,
+      "coffeePrice": 1.5,
+      "mealBudgetPerDay": 28
+    },
+    "sao paulo": {
+      "city": "São Paulo",
+      "country": "Brazil",
+      "meal": 12,
+      "transport": 1.5,
+      "accommodation": 75,
+      "coffeePrice": 2,
+      "mealBudgetPerDay": 40
+    },
+    "buenos aires": {
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "meal": 10,
+      "transport": 0.8,
+      "accommodation": 60,
+      "coffeePrice": 1.8,
+      "mealBudgetPerDay": 35
+    },
+    "auckland": {
+      "city": "Auckland",
+      "country": "New Zealand",
+      "meal": 17,
+      "transport": 2.8,
+      "accommodation": 120,
+      "coffeePrice": 3.2,
+      "mealBudgetPerDay": 62
+    },
+    "vienna": {
+      "city": "Vienna",
+      "country": "Austria",
+      "meal": 13,
+      "transport": 2.4,
+      "accommodation": 100,
+      "coffeePrice": 2.2,
+      "mealBudgetPerDay": 48
+    },
+    "prague": {
+      "city": "Prague",
+      "country": "Czech Republic",
+      "meal": 10,
+      "transport": 1.8,
+      "accommodation": 75,
+      "coffeePrice": 1.8,
+      "mealBudgetPerDay": 38
+    },
+    "budapest": {
+      "city": "Budapest",
+      "country": "Hungary",
+      "meal": 9,
+      "transport": 1.6,
+      "accommodation": 70,
+      "coffeePrice": 1.6,
+      "mealBudgetPerDay": 35
+    },
+    "lisbon": {
+      "city": "Lisbon",
+      "country": "Portugal",
+      "meal": 11,
+      "transport": 2,
+      "accommodation": 80,
+      "coffeePrice": 1.8,
+      "mealBudgetPerDay": 42
+    },
+    "athens": {
+      "city": "Athens",
+      "country": "Greece",
+      "meal": 10,
+      "transport": 1.5,
+      "accommodation": 75,
+      "coffeePrice": 1.8,
+      "mealBudgetPerDay": 38
+    },
+    "istanbul": {
+      "city": "Istanbul",
+      "country": "Turkey",
+      "meal": 8,
+      "transport": 0.8,
+      "accommodation": 50,
+      "coffeePrice": 1.5,
+      "mealBudgetPerDay": 28
+    },
+    "bangkok": {
+      "city": "Bangkok",
+      "country": "Thailand",
+      "meal": 8,
+      "transport": 0.8,
+      "accommodation": 50,
+      "coffeePrice": 1.5,
+      "mealBudgetPerDay": 30
+    },
+    "hanoi": {
+      "city": "Hanoi",
+      "country": "Vietnam",
+      "meal": 5,
+      "transport": 0.4,
+      "accommodation": 35,
+      "coffeePrice": 1,
+      "mealBudgetPerDay": 16
+    },
+    "ho chi minh": {
+      "city": "Ho Chi Minh City",
+      "country": "Vietnam",
+      "meal": 5,
+      "transport": 0.4,
+      "accommodation": 35,
+      "coffeePrice": 1,
+      "mealBudgetPerDay": 16
+    },
+    "kochi": {
+      "city": "Kochi",
+      "country": "India",
+      "meal": 4,
+      "transport": 0.4,
+      "accommodation": 28,
+      "coffeePrice": 0.8,
+      "mealBudgetPerDay": 12
+    }
+  }
+}

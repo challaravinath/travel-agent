@@ -1,0 +1,272 @@
+{
+  "attractions": {
+    "paris": [
+      {
+        "name": "Eiffel Tower",
+        "category": "Monument",
+        "rating": 4.7,
+        "visitorsPerYear": "7000000",
+        "description": "Iconic iron lattice tower"
+      },
+      {
+        "name": "Louvre Museum",
+        "category": "Museum",
+        "rating": 4.6,
+        "visitorsPerYear": "9000000",
+        "description": "World's largest art museum"
+      },
+      {
+        "name": "Arc de Triomphe",
+        "category": "Monument",
+        "rating": 4.5,
+        "visitorsPerYear": "1200000",
+        "description": "Monumental arch honoring war dead"
+      },
+      {
+        "name": "Notre-Dame Cathedral",
+        "category": "Religious",
+        "rating": 4.6,
+        "visitorsPerYear": "13000000",
+        "description": "Medieval Catholic cathedral"
+      },
+      {
+        "name": "Sacré-Cœur",
+        "category": "Religious",
+        "rating": 4.5,
+        "visitorsPerYear": "10000000",
+        "description": "Basilica with stunning city views"
+      }
+    ],
+    "london": [
+      {
+        "name": "Big Ben & Houses of Parliament",
+        "category": "Monument",
+        "rating": 4.6,
+        "visitorsPerYear": "3000000",
+        "description": "Iconic clock tower and parliament building"
+      },
+      {
+        "name": "Tower of London",
+        "category": "Castle",
+        "rating": 4.5,
+        "visitorsPerYear": "2800000",
+        "description": "Historic royal castle with crown jewels"
+      },
+      {
+        "name": "British Museum",
+        "category": "Museum",
+        "rating": 4.6,
+        "visitorsPerYear": "8000000",
+        "description": "World history and culture museum"
+      },
+      {
+        "name": "Buckingham Palace",
+        "category": "Palace",
+        "rating": 4.4,
+        "visitorsPerYear": "500000",
+        "description": "Official residence of the monarch"
+      },
+      {
+        "name": "Tower Bridge",
+        "category": "Bridge",
+        "rating": 4.5,
+        "visitorsPerYear": "1000000",
+        "description": "Historic bascule bridge"
+      }
+    ],
+    "tokyo": [
+      {
+        "name": "Senso-ji Temple",
+        "category": "Temple",
+        "rating": 4.6,
+        "visitorsPerYear": "3000000",
+        "description": "Ancient Buddhist temple in Asakusa"
+      },
+      {
+        "name": "Tokyo Skytree",
+        "category": "Tower",
+        "rating": 4.5,
+        "visitorsPerYear": "2500000",
+        "description": "Modern broadcasting tower with observation deck"
+      },
+      {
+        "name": "Meiji Shrine",
+        "category": "Shrine",
+        "rating": 4.6,
+        "visitorsPerYear": "3000000",
+        "description": "Shinto shrine dedicated to Emperor Meiji"
+      },
+      {
+        "name": "Imperial Palace",
+        "category": "Palace",
+        "rating": 4.3,
+        "visitorsPerYear": "1200000",
+        "description": "Official residence of the Emperor"
+      },
+      {
+        "name": "Shibuya Crossing",
+        "category": "District",
+        "rating": 4.6,
+        "visitorsPerYear": "2000000",
+        "description": "World's busiest pedestrian intersection"
+      }
+    ],
+    "new york": [
+      {
+        "name": "Statue of Liberty",
+        "category": "Monument",
+        "rating": 4.6,
+        "visitorsPerYear": "4000000",
+        "description": "Iconic symbol of freedom"
+      },
+      {
+        "name": "Central Park",
+        "category": "Park",
+        "rating": 4.7,
+        "visitorsPerYear": "42000000",
+        "description": "Urban park with lakes and forests"
+      },
+      {
+        "name": "Empire State Building",
+        "category": "Building",
+        "rating": 4.6,
+        "visitorsPerYear": "3000000",
+        "description": "Art Deco skyscraper with observation deck"
+      },
+      {
+        "name": "Metropolitan Museum of Art",
+        "category": "Museum",
+        "rating": 4.7,
+        "visitorsPerYear": "5000000",
+        "description": "Largest art museum in the US"
+      },
+      {
+        "name": "Times Square",
+        "category": "District",
+        "rating": 4.3,
+        "visitorsPerYear": "300000000",
+        "description": "Major commercial intersection"
+      }
+    ],
+    "sydney": [
+      {
+        "name": "Sydney Opera House",
+        "category": "Building",
+        "rating": 4.7,
+        "visitorsPerYear": "8500000",
+        "description": "Iconic performing arts venue"
+      },
+      {
+        "name": "Sydney Harbour Bridge",
+        "category": "Bridge",
+        "rating": 4.6,
+        "visitorsPerYear": "3000000",
+        "description": "Iconic arch bridge with city views"
+      },
+      {
+        "name": "Bondi Beach",
+        "category": "Beach",
+        "rating": 4.5,
+        "visitorsPerYear": "2000000",
+        "description": "Famous coastal beach"
+      },
+      {
+        "name": "Royal Botanic Garden",
+        "category": "Garden",
+        "rating": 4.6,
+        "visitorsPerYear": "2000000",
+        "description": "Botanical garden with harbor views"
+      }
+    ],
+    "barcelona": [
+      {
+        "name": "Sagrada Familia",
+        "category": "Church",
+        "rating": 4.7,
+        "visitorsPerYear": "3000000",
+        "description": "Gaudí's masterpiece basilica"
+      },
+      {
+        "name": "Park Güell",
+        "category": "Park",
+        "rating": 4.6,
+        "visitorsPerYear": "3000000",
+        "description": "Colorful public park with Gaudí architecture"
+      },
+      {
+        "name": "Gothic Quarter",
+        "category": "District",
+        "rating": 4.5,
+        "visitorsPerYear": "1500000",
+        "description": "Medieval city center"
+      },
+      {
+        "name": "Casa Batlló",
+        "category": "Building",
+        "rating": 4.6,
+        "visitorsPerYear": "1000000",
+        "description": "Modernist masterpiece by Gaudí"
+      }
+    ],
+    "rome": [
+      {
+        "name": "Colosseum",
+        "category": "Monument",
+        "rating": 4.6,
+        "visitorsPerYear": "7000000",
+        "description": "Ancient Roman amphitheater"
+      },
+      {
+        "name": "Vatican Museums",
+        "category": "Museum",
+        "rating": 4.6,
+        "visitorsPerYear": "6000000",
+        "description": "World's greatest art collection"
+      },
+      {
+        "name": "Roman Forum",
+        "category": "Ancient Site",
+        "rating": 4.5,
+        "visitorsPerYear": "1500000",
+        "description": "Ancient center of Rome"
+      },
+      {
+        "name": "Trevi Fountain",
+        "category": "Fountain",
+        "rating": 4.5,
+        "visitorsPerYear": "3000000",
+        "description": "Baroque fountain with coin tossing tradition"
+      }
+    ],
+    "dubai": [
+      {
+        "name": "Burj Khalifa",
+        "category": "Tower",
+        "rating": 4.6,
+        "visitorsPerYear": "1500000",
+        "description": "World's tallest building"
+      },
+      {
+        "name": "Dubai Mall",
+        "category": "Mall",
+        "rating": 4.4,
+        "visitorsPerYear": "80000000",
+        "description": "World's largest shopping mall"
+      },
+      {
+        "name": "Palm Jumeirah",
+        "category": "Island",
+        "rating": 4.3,
+        "visitorsPerYear": "1000000",
+        "description": "Man-made palm-shaped island"
+      },
+      {
+        "name": "Gold Souk",
+        "category": "Market",
+        "rating": 4.4,
+        "visitorsPerYear": "500000",
+        "description": "Traditional gold marketplace"
+      }
+    ]
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "safety": {
+    "paris": {
+      "city": "Paris",
+      "country": "France",
+      "safetyIndex": 68,
+      "crimeIndex": 32,
+      "recommendation": "Generally safe, watch out for pickpockets in tourist areas"
+    },
+    "london": {
+      "city": "London",
+      "country": "United Kingdom",
+      "safetyIndex": 72,
+      "crimeIndex": 28,
+      "recommendation": "Very safe, standard urban precautions advised"
+    },
+    "berlin": {
+      "city": "Berlin",
+      "country": "Germany",
+      "safetyIndex": 76,
+      "crimeIndex": 24,
+      "recommendation": "Very safe, minimal crime concerns"
+    },
+    "amsterdam": {
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "safetyIndex": 78,
+      "crimeIndex": 22,
+      "recommendation": "Very safe, excellent public safety"
+    },
+    "rome": {
+      "city": "Rome",
+      "country": "Italy",
+      "safetyIndex": 65,
+      "crimeIndex": 35,
+      "recommendation": "Safe overall, petty theft common in crowded tourist spots"
+    },
+    "madrid": {
+      "city": "Madrid",
+      "country": "Spain",
+      "safetyIndex": 70,
+      "crimeIndex": 30,
+      "recommendation": "Safe city, avoid pickpockets in metro stations"
+    },
+    "barcelona": {
+      "city": "Barcelona",
+      "country": "Spain",
+      "safetyIndex": 68,
+      "crimeIndex": 32,
+      "recommendation": "Generally safe, watch belongings in crowded areas"
+    },
+    "vienna": {
+      "city": "Vienna",
+      "country": "Austria",
+      "safetyIndex": 85,
+      "crimeIndex": 15,
+      "recommendation": "Very safe, one of Europe's safest cities"
+    },
+    "prague": {
+      "city": "Prague",
+      "country": "Czech Republic",
+      "safetyIndex": 74,
+      "crimeIndex": 26,
+      "recommendation": "Safe city, minor pickpocketing in tourist zones"
+    },
+    "budapest": {
+      "city": "Budapest",
+      "country": "Hungary",
+      "safetyIndex": 71,
+      "crimeIndex": 29,
+      "recommendation": "Safe, exercise normal city precautions"
+    },
+    "lisbon": {
+      "city": "Lisbon",
+      "country": "Portugal",
+      "safetyIndex": 75,
+      "crimeIndex": 25,
+      "recommendation": "Very safe, pleasant and secure"
+    },
+    "athens": {
+      "city": "Athens",
+      "country": "Greece",
+      "safetyIndex": 68,
+      "crimeIndex": 32,
+      "recommendation": "Safe overall, occasional petty crime"
+    },
+    "tokyo": {
+      "city": "Tokyo",
+      "country": "Japan",
+      "safetyIndex": 92,
+      "crimeIndex": 8,
+      "recommendation": "Extremely safe, one of the safest cities in the world"
+    },
+    "osaka": {
+      "city": "Osaka",
+      "country": "Japan",
+      "safetyIndex": 90,
+      "crimeIndex": 10,
+      "recommendation": "Extremely safe, excellent public safety"
+    },
+    "new york": {
+      "city": "New York",
+      "country": "United States",
+      "safetyIndex": 65,
+      "crimeIndex": 35,
+      "recommendation": "Safe in most areas, avoid certain neighborhoods at night"
+    },
+    "los angeles": {
+      "city": "Los Angeles",
+      "country": "United States",
+      "safetyIndex": 62,
+      "crimeIndex": 38,
+      "recommendation": "Use caution in some areas, vary by neighborhood"
+    },
+    "chicago": {
+      "city": "Chicago",
+      "country": "United States",
+      "safetyIndex": 64,
+      "crimeIndex": 36,
+      "recommendation": "Generally safe downtown, avoid some neighborhoods"
+    },
+    "san francisco": {
+      "city": "San Francisco",
+      "country": "United States",
+      "safetyIndex": 66,
+      "crimeIndex": 34,
+      "recommendation": "Safe in most areas, property crime more common"
+    },
+    "miami": {
+      "city": "Miami",
+      "country": "United States",
+      "safetyIndex": 60,
+      "crimeIndex": 40,
+      "recommendation": "Use caution, vary safety by neighborhood"
+    },
+    "toronto": {
+      "city": "Toronto",
+      "country": "Canada",
+      "safetyIndex": 80,
+      "crimeIndex": 20,
+      "recommendation": "Very safe, excellent police presence"
+    },
+    "vancouver": {
+      "city": "Vancouver",
+      "country": "Canada",
+      "safetyIndex": 82,
+      "crimeIndex": 18,
+      "recommendation": "Very safe, friendly and secure"
+    },
+    "sydney": {
+      "city": "Sydney",
+      "country": "Australia",
+      "safetyIndex": 80,
+      "crimeIndex": 20,
+      "recommendation": "Very safe, enjoy the city with minimal concerns"
+    },
+    "melbourne": {
+      "city": "Melbourne",
+      "country": "Australia",
+      "safetyIndex": 81,
+      "crimeIndex": 19,
+      "recommendation": "Very safe, excellent city security"
+    },
+    "auckland": {
+      "city": "Auckland",
+      "country": "New Zealand",
+      "safetyIndex": 83,
+      "crimeIndex": 17,
+      "recommendation": "Very safe, one of the safest in the Southern Hemisphere"
+    },
+    "dubai": {
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "safetyIndex": 88,
+      "crimeIndex": 12,
+      "recommendation": "Very safe, strict law enforcement and security"
+    },
+    "singapore": {
+      "city": "Singapore",
+      "country": "Singapore",
+      "safetyIndex": 89,
+      "crimeIndex": 11,
+      "recommendation": "Very safe, excellent policing and security measures"
+    },
+    "hong kong": {
+      "city": "Hong Kong",
+      "country": "Hong Kong",
+      "safetyIndex": 84,
+      "crimeIndex": 16,
+      "recommendation": "Very safe, low violent crime"
+    },
+    "bangkok": {
+      "city": "Bangkok",
+      "country": "Thailand",
+      "safetyIndex": 62,
+      "crimeIndex": 38,
+      "recommendation": "Relatively safe, petty theft common in crowded areas"
+    },
+    "seoul": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "safetyIndex": 87,
+      "crimeIndex": 13,
+      "recommendation": "Very safe, excellent public safety infrastructure"
+    },
+    "mumbai": {
+      "city": "Mumbai",
+      "country": "India",
+      "safetyIndex": 55,
+      "crimeIndex": 45,
+      "recommendation": "Use caution, busy metropolitan area with varying safety"
+    },
+    "delhi": {
+      "city": "Delhi",
+      "country": "India",
+      "safetyIndex": 52,
+      "crimeIndex": 48,
+      "recommendation": "Use significant caution, high crime rates in some areas"
+    },
+    "hyderabad": {
+      "city": "Hyderabad",
+      "country": "India",
+      "safetyIndex": 62,
+      "crimeIndex": 38,
+      "recommendation": "Moderately safe, standard precautions recommended"
+    },
+    "bangalore": {
+      "city": "Bangalore",
+      "country": "India",
+      "safetyIndex": 64,
+      "crimeIndex": 36,
+      "recommendation": "Generally safe, modern city with good infrastructure"
+    },
+    "shanghai": {
+      "city": "Shanghai",
+      "country": "China",
+      "safetyIndex": 82,
+      "crimeIndex": 18,
+      "recommendation": "Very safe, excellent public order"
+    },
+    "beijing": {
+      "city": "Beijing",
+      "country": "China",
+      "safetyIndex": 80,
+      "crimeIndex": 20,
+      "recommendation": "Very safe, low violent crime rates"
+    },
+    "istanbul": {
+      "city": "Istanbul",
+      "country": "Turkey",
+      "safetyIndex": 64,
+      "crimeIndex": 36,
+      "recommendation": "Generally safe, occasional petty crime, standard precautions"
+    },
+    "cairo": {
+      "city": "Cairo",
+      "country": "Egypt",
+      "safetyIndex": 50,
+      "crimeIndex": 50,
+      "recommendation": "Use caution, busy city with safety concerns"
+    },
+    "johannesburg": {
+      "city": "Johannesburg",
+      "country": "South Africa",
+      "safetyIndex": 58,
+      "crimeIndex": 42,
+      "recommendation": "Use caution, avoid certain areas especially at night"
+    },
+    "mexico city": {
+      "city": "Mexico City",
+      "country": "Mexico",
+      "safetyIndex": 61,
+      "crimeIndex": 39,
+      "recommendation": "Generally safe in tourist areas, use standard precautions"
+    },
+    "sao paulo": {
+      "city": "São Paulo",
+      "country": "Brazil",
+      "safetyIndex": 59,
+      "crimeIndex": 41,
+      "recommendation": "Use caution, safety varies significantly by area"
+    },
+    "buenos aires": {
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "safetyIndex": 68,
+      "crimeIndex": 32,
+      "recommendation": "Generally safe, watch for petty crime"
+    },
+    "hanoi": {
+      "city": "Hanoi",
+      "country": "Vietnam",
+      "safetyIndex": 70,
+      "crimeIndex": 30,
+      "recommendation": "Safe for tourists, chaotic traffic and petty theft concerns"
+    },
+    "ho chi minh": {
+      "city": "Ho Chi Minh City",
+      "country": "Vietnam",
+      "safetyIndex": 69,
+      "crimeIndex": 31,
+      "recommendation": "Safe overall, watch belongings in crowded areas"
+    },
+    "kochi": {
+      "city": "Kochi",
+      "country": "India",
+      "safetyIndex": 72,
+      "crimeIndex": 28,
+      "recommendation": "Very safe, relaxed atmosphere and good security"
+    }
+  }
+}

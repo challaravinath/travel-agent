@@ -1,0 +1,46 @@
+{
+  "name": "travel-agent",
+  "version": "1.0.0",
+  "description": "Production-grade travel agent with tool orchestration, evals, and monitoring",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "server": "tsx src/api/server.ts",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --fix",
+     "cli": "tsx src/cli/cli.ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "db:setup": "tsx scripts/setup-db.ts",
+    "db:migrate": "prisma migrate dev",
+    "example:cli": "tsx examples/cli.ts",
+    "evals:run": "tsx scripts/run-evals.ts",
+    "evals:report": "tsx scripts/generate-report.ts"
+  },
+  "keywords": ["ai", "agents", "tool-use", "evals", "typescript"],
+  "author": "You",
+  "license": "MIT",
+  "dependencies": {
+    "ai": "^6.0.0",
+    "@ai-sdk/openai": "^1.0.0",
+    "@prisma/client": "^5.0.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.0.0",
+    "pino": "^8.0.0",
+    "pino-pretty": "^10.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/ui": "^1.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "prisma": "^5.0.0"
+  }
+}
