@@ -22,6 +22,11 @@
 - Vector search
 - Context management
 
+## Phase 5: MCP 🔌
+- Protocol support
+- Tool marketplace
+
+
 ## 🎓 Educational Value
 
 ## Quick Start Guide
@@ -127,9 +132,6 @@ Result + Metrics
 - Context management
 
 
-## Phase 5: MCP 🔌
-- Protocol support
-- Tool marketplace
 
   
 
