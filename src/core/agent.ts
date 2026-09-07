@@ -1,4 +1,6 @@
 import { Tool } from './tool';
+import { metricsService } from '../services/metrics.service';
+import { costService, AllowedToolNames } from '../services/cost.service';
 
 /**
  * AGENT CONFIG
@@ -85,6 +87,55 @@ export abstract class BaseAgent {
    */
   getTool(name: string): Tool | undefined {
     return this.tools.get(name);
+  }
+
+  /**
+   * CENTRAL CHOKE-POINT FOR TOOL EXECUTION
+   * Automatically handles performance metrics and cost tracking safely using singleton services.
+   */
+  async executeTool(
+    toolName: AllowedToolNames,
+    args: any
+  ): Promise<{ success: boolean; data?: string; error?: string }> {
+    // 1. Find the tool using this.getTool()
+    const tool = this.getTool(toolName);
+
+    // 2. If it doesn't exist, return an error response immediately
+    if (!tool) {
+      return {
+        success: false,
+        error: `Tool '${toolName}' not found in agent registry.`,
+      };
+    }
+
+    // 3. Record start time using performance.now()
+    const startTime = performance.now();
+
+    try {
+      // 4. Run the tool asynchronously
+      const result = await tool.execute(args);
+      const duration = performance.now() - startTime;
+
+      // Track successful metrics and account for cost
+      metricsService.record(toolName, duration, true);
+      costService.recordCost(toolName);
+
+      return {
+        success: true,
+        data: result,
+      };
+    } catch (err: any) {
+      // 5. Handle execution failures gracefully
+      const duration = performance.now() - startTime;
+
+      // Track failed metrics (failed tools do not charge a financial cost)
+      metricsService.record(toolName, duration, false);
+
+      return {
+        success: false,
+        error: err?.message || `An unknown error occurred while running '${toolName}'.`,
+      };
+    }
   }
 
   /**

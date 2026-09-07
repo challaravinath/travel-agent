@@ -7,6 +7,8 @@ import { createSafetyTool } from '../tools/safety/safety.tool';
 import { TravelAgent } from '../agent/travelAgent';
 import { AgentConfig } from '../core/agent';
 import { Logger } from '../services/logger.service';
+import { metricsService } from '../services/metrics.service';
+import { costService } from '../services/cost.service';
 
 /**
  * CLI INTERFACE
@@ -64,15 +66,16 @@ async function handleWeather(args: string[]) {
   const city = args.join(' ');
   logger.info(`User requested weather for: ${city}`);
 
-  try {
-    const startTime = Date.now();
-    const result = await weatherTool.execute({ city });
-    const duration = Date.now() - startTime;
+  const result = await agent.executeTool('getWeather', { city });
 
-    const parsed = JSON.parse(result);
+  if (!result.success || !result.data) {
+    console.log(`❌ Error: ${result.error}`);
+    return;
+  }
 
-    if (parsed.success) {
-      console.log(`
+  const parsed = JSON.parse(result.data);
+
+  console.log(`
 ✅ Weather Data:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   📍 Location: ${parsed.city}, ${parsed.country}
@@ -81,17 +84,7 @@ async function handleWeather(args: string[]) {
   💧 Humidity: ${parsed.humidity}%
   💨 Wind: ${parsed.windSpeed} km/h
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-⏱️  Time: ${duration}ms
-      `);
-      logger.logToolCall('getWeather', { city }, duration, true);
-    } else {
-      console.log(`❌ Error: ${parsed.error}`);
-      logger.logToolCall('getWeather', { city }, duration, false, parsed.error);
-    }
-  } catch (error) {
-    console.log(`❌ Error: ${error}`);
-    logger.error('Weather command failed', error as Error);
-  }
+  `);
 }
 
 async function handleFlights(args: string[]) {
@@ -134,14 +127,19 @@ City Codes:
 
   try {
     const startTime = Date.now();
-    const result = await flightsTool.execute({
+    const result = await agent.executeTool('getFlightPrice', {
       origin: origin.toLowerCase(),
       destination: destination.toLowerCase(),
       departureDate,
     });
     const duration = Date.now() - startTime;
 
-    const parsed = JSON.parse(result);
+    if (!result.success || !result.data) {
+      console.log(`❌ Error: ${result.error}`);
+      return;
+    }
+
+    const parsed = JSON.parse(result.data);
 
     if (parsed.success) {
       console.log(`
@@ -187,42 +185,29 @@ async function handleAttractions(args: string[]) {
   const city = args.join(' ');
   logger.info(`User requested attractions for: ${city}`);
 
-  try {
-    const startTime = Date.now();
-    const result = await attractionsTool.execute({ city });
-    const duration = Date.now() - startTime;
+  const result = await agent.executeTool('getAttractions', { city });
 
-    const parsed = JSON.parse(result);
+  if (!result.success || !result.data) {
+    console.log(`❌ Error: ${result.error}`);
+    return;
+  }
 
-    if (parsed.success) {
-      console.log(`
+  const parsed = JSON.parse(result.data);
+
+  console.log(`
 ✅ Top Attractions in ${parsed.city}:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-      `);
+  `);
 
-      parsed.attractions.forEach((attraction: any, i: number) => {
-        console.log(`
+  parsed.attractions.forEach((attraction: any, i: number) => {
+    console.log(`
   ${i + 1}. ${attraction.name}
      Category: ${attraction.category}
      Rating: ⭐ ${attraction.rating}
      Visitors/Year: ${attraction.visitorsPerYear}
      ${attraction.description}
-      `);
-      });
-
-      console.log(`
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-⏱️  Time: ${duration}ms
-      `);
-      logger.logToolCall('getAttractions', { city }, duration, true);
-    } else {
-      console.log(`❌ Error: ${parsed.error}`);
-      logger.logToolCall('getAttractions', { city }, duration, false, parsed.error);
-    }
-  } catch (error) {
-    console.log(`❌ Error: ${error}`);
-    logger.error('Attractions command failed', error as Error);
-  }
+    `);
+  });
 }
 
 async function handleCosts(args: string[]) {
@@ -237,10 +222,15 @@ async function handleCosts(args: string[]) {
 
   try {
     const startTime = Date.now();
-    const result = await costsTool.execute({ city });
+    const result = await agent.executeTool('getCostOfLiving', { city });
     const duration = Date.now() - startTime;
 
-    const parsed = JSON.parse(result);
+    if (!result.success || !result.data) {
+      console.log(`❌ Error: ${result.error}`);
+      return;
+    }
+
+    const parsed = JSON.parse(result.data);
 
     if (parsed.success) {
       console.log(`
@@ -277,10 +267,15 @@ async function handleSafety(args: string[]) {
 
   try {
     const startTime = Date.now();
-    const result = await safetyTool.execute({ city });
+    const result = await agent.executeTool('getSafetyInfo', { city });
     const duration = Date.now() - startTime;
 
-    const parsed = JSON.parse(result);
+    if (!result.success || !result.data) {
+      console.log(`❌ Error: ${result.error}`);
+      return;
+    }
+
+    const parsed = JSON.parse(result.data);
 
     if (parsed.success) {
       console.log(`
@@ -356,6 +351,24 @@ function displayMenu() {
 💡 Airport Codes:
   Paris: CDG | London: LHR | Tokyo: NRT | New York: JFK
   Sydney: SYD | Dubai: DXB | Singapore: SIN | Bangkok: BKK
+  `);
+}
+
+function handleStats() {
+  const metrics = metricsService.getOverallSummary();
+  const totalCost = costService.getTotalCost();
+  const avgCost = costService.getAverageCost();
+
+  console.log(`
+📊 System Stats:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Total Calls:        ${metrics.totalCalls}
+  Success Rate:       ${metrics.overallSuccessRate !== null ? metrics.overallSuccessRate.toFixed(1) + '%' : 'No data yet'}
+  Avg Response Time:  ${metrics.overallAvgDuration !== null ? metrics.overallAvgDuration.toFixed(0) + 'ms' : 'No data yet'}
+
+  Total Cost:         $${totalCost.toFixed(4)}
+  Avg Cost/Call:      ${avgCost !== null ? '$' + avgCost.toFixed(4) : 'No data yet'}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   `);
 }
 
