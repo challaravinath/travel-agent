@@ -1,32 +1,44 @@
 # Development Roadmap
 
 ## Phase 1: Foundation ✅
-- Tool calling architecture
+- Tool execution architecture (manually routed — no LLM decision-making yet)
 - 5 production tools
 - Guardrails & validation
 - [Done]
 
-## Comming Phases
+## Phase 2: Observability & Cost Tracking ✅
+- MetricsService: latency (avg, p50/p95/p99), success rate, overall summary
+- CostService: type-safe pricing table, total/average/per-tool cost tracking
+- BaseAgent.executeTool(): central tracked execution path for all tool calls
+- CLI `stats` command
+- [Done]
 
-## Phase 2: Observability 📋
-- Cost tracking
-- Advanced metrics
+## Upcoming Phases
 
+## Phase 2.5: Persistence 📋
+- SQLite: store metrics/cost history across restarts
+- Trend queries over time
 
-## Phase 3: Evaluation 📈
-- Quality metrics
+## Phase 3: LLM Orchestration 🧠
+- LLM reads natural language, decides which tools to call
+- Multi-tool execution in one turn
+- Natural language response synthesis
+- Requires OpenAI/Anthropic API key
+
+## Phase 4: Evaluation 📈
+- Quality metrics for LLM tool-selection accuracy
 - Test datasets
 
-
-## Phase 4: RAG 🔍
+## Phase 5: RAG 🔍
 - Vector search
 - Context management
 
-## Phase 5: MCP 🔌
+## Phase 6: MCP 🔌
 - Protocol support
 - Tool marketplace
 
 ## Quick Start Guide
+
 # Clone repo
 git clone https://github.com/challaravinath/travel-agent.git
 cd travel-agent
@@ -39,15 +51,17 @@ npm run test
 
 ### CLI Usage
 npm run cli
+
 **Commands:**
-weather [city]                    Get weather for city
-flights [from-code] [to-code] [date]    Search flights
-attractions [city]                Find attractions
-costs [city]                      Cost of living
-safety [city]                     Safety information
-tools                             List all tools
-info                              Agent information
-exit                              Exit CLI
+weather [city]                          Get weather for city
+flights [from-code] [to-code] [date]     Search flights
+attractions [city]                       Find attractions
+costs [city]                             Cost of living
+safety [city]                            Safety information
+stats                                    Show cost & performance summary
+tools                                    List all tools
+info                                     Agent information
+exit                                     Exit CLI
 
 **Examples:**
 > weather Paris
@@ -55,8 +69,7 @@ exit                              Exit CLI
 > attractions Tokyo
 > costs Bangkok
 > safety Singapore
-
-This project teaches:
+> stats
 
 **Web UI Usage**
 npm run server
@@ -71,32 +84,30 @@ See performance metrics in right panel
 Check activity logs updating in real-time
 
 **Testing**
-# Run all tests
-npm run test
-
-# Watch mode (tests run on file changes)
-npm run test:watch
-
-# Coverage
-npm run test:coverage
+npm run test              # Run all tests
+npm run test:watch        # Watch mode
+npm run test:coverage     # Coverage
 
 **Build**
 npm run build
-
 # Output: dist/ folder with compiled JavaScript
 
 **Project Structure**
 src/
-├── core/              # Tool & Agent abstraction
+├── core/              # Tool & Agent abstraction (includes executeTool())
 ├── tools/             # 5 production tools
-├── services/          # Logger, Validation
+├── services/          # Logger, Validation, Metrics, Cost
 ├── cli/               # Command-line interface
 ├── api/               # HTTP server
 ├── ui/                # Web dashboard
 └── data/              # JSON databases
 
 tests/
-└── unit/              # 86+ unit tests
+└── unit/              # 90+ unit tests
+
+## 🎓 Educational Value
+
+**Architecture**
 
 ## 🎓 Educational Value
 **Architecture**
